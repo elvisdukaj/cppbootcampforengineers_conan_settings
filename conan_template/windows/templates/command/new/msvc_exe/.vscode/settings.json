@@ -1,0 +1,13 @@
+{
+    "C_Cpp.intelliSenseEngine": "disabled",
+
+    "clangd.path": "clangd",
+    
+    "clangd.arguments": [
+        "-log=verbose",
+        "-pretty",
+        "--clang-tidy",
+        "--background-index",
+        "--compile-commands-dir=${workspaceFolder}/build/windows-x86_64-msvc-193-debug/compile_commands.json"
+    ]
+}
