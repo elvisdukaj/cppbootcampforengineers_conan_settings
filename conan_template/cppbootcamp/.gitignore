@@ -1,0 +1,12 @@
+# Caches
+.cache
+
+# IDE
+/.vscode
+
+# CMake
+/compile_commands.json
+/CMakeUserPresets.json
+
+# build directories
+/build

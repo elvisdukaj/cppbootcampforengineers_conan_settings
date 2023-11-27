@@ -4,7 +4,7 @@ from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 
 class {{ name }}Recipe(ConanFile):
     name = " {{ name }}"
-    version = " {{ version}}"
+    version = " {{ version }}"
     package_type = "application"
 
     # Optional metadata
@@ -26,6 +26,13 @@ class {{ name }}Recipe(ConanFile):
             ]        
         cmake_layout(self)
 
+    def build_requirements(self):
+        self.tool_requires("cmake/3.27.7")
+        self.tool_requires("ninja/1.11.1")
+
+    def requirements(self):
+        self.requires("fmt/10.1.1")
+        
     def generate(self):
         deps = CMakeDeps(self)
         deps.generate()

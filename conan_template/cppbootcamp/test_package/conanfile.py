@@ -3,7 +3,7 @@ from conan import ConanFile
 from conan.tools.build import can_run
 
 
-class {{ name }}TestConan(ConanFile):
+class TheCalcTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
 
     def requirements(self):
@@ -11,4 +11,4 @@ class {{ name }}TestConan(ConanFile):
 
     def test(self):
         if can_run(self):
-            self.run("{{ name }}", env="conanrun")
+            self.run("TheCalc", env="conanrun")
