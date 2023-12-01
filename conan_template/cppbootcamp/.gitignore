@@ -2,7 +2,6 @@
 .cache
 
 # IDE
-/.vscode
 
 # CMake
 /compile_commands.json
