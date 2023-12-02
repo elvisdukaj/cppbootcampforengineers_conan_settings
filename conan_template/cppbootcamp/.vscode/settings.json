@@ -48,4 +48,5 @@
         "xutility": "cpp"
     },
     "editor.formatOnSave": true,
+    "cmake.options.statusBarVisibility": "visible"
 }
